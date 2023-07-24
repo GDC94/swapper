@@ -10,7 +10,7 @@ interface ErrorPageProps {
 
 export const ErrorPage = ({ statusCode, message }: ErrorPageProps) => {
   return (
-    <MainLayout full>
+    <MainLayout>
       <Head>
         <title>😔 Something went wrong </title>
       </Head>
