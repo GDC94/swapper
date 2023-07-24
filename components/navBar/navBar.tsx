@@ -1,9 +1,18 @@
-import { Button, HStack, Heading, Stack } from "@chakra-ui/react";
+import {
+  Button,
+  HStack,
+  Heading,
+  Stack,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { BiWallet } from "react-icons/bi";
 import { StackNavStyles } from "./navBar.styles";
 import StatusIndicator from "../statusIndicator/statusIndicator";
+import ModalWallets from "../modal/modalWallets";
 
 const NavBar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Stack {...StackNavStyles} flexDirection={"row"}>
       <HStack>
@@ -23,9 +32,11 @@ const NavBar = () => {
             boxShadow: "xl",
           }}
           rightIcon={<BiWallet />}
+          onClick={onOpen}
         >
           Connect Wallet
         </Button>
+        <ModalWallets isOpen={isOpen} onClose={onClose} />
 
         <StatusIndicator />
       </HStack>

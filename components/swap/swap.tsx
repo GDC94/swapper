@@ -4,7 +4,7 @@ import { FlexStyles } from "./swap.styles";
 export const Swap = () => {
   return (
     <Flex {...FlexStyles} w={[300, 400, 500]}>
-      <Heading>Ripio Explorer</Heading>
+      <Heading>Swap</Heading>
     </Flex>
   );
 };

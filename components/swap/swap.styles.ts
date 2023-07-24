@@ -1,5 +1,4 @@
 export const FlexStyles = {
-  bg: "grayLight",
   border: "4px",
   borderColor: "grayLight",
   borderRadius: 12,

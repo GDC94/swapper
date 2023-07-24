@@ -38,7 +38,12 @@ const StatusIndicator = () => {
 	`;
 
   return (
-    <Tooltip label={`Connected`} fontWeight={800} textTransform="capitalize" bg={"background"}>
+    <Tooltip
+      label={`Connected`}
+      fontWeight={800}
+      textTransform="capitalize"
+      bg={"background"}
+    >
       <Box
         as="div"
         h="18px"
@@ -65,7 +70,6 @@ const StatusIndicator = () => {
       />
     </Tooltip>
   );
-}
-
+};
 
 export default StatusIndicator;
