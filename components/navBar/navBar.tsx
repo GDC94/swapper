@@ -1,21 +1,23 @@
-import {
-  Button,
-  HStack,
-  Heading,
-  Stack,
-  useDisclosure,
-} from "@chakra-ui/react";
 import { BiWallet } from "react-icons/bi";
 import { StackNavStyles } from "./navBar.styles";
 import StatusIndicator from "../statusIndicator/statusIndicator";
 import ModalWallets from "../modal/modalWallets";
+import {
+  Button,
+  HStack,
+  Heading,
+  Image,
+  Stack,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Stack {...StackNavStyles} flexDirection={"row"}>
-      <HStack>
+      <HStack alignItems={"center"} spacing={6}>
+        <Image src="/images/mishblanco.png" alt="Dan Abramov" w={"35px"} />
         <Heading as="h4" size="md">
           Swapper
         </Heading>

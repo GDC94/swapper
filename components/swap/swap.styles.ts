@@ -4,5 +4,5 @@ export const FlexStyles = {
   borderRadius: 12,
   align: "center",
   justify: "center",
-  height: "90%",
+  height: "100%",
 };

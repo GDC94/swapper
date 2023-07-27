@@ -4,7 +4,7 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "#02000a",
+        bgGradient: "linear(to-b, #1A2231 0 , #060717 20%, #060717 100%)",
         color: "#ffffff",
       },
     },
@@ -17,17 +17,17 @@ const theme = extendTheme({
     },
   },
   colors: {
-    background: "#000000",
+    background: "#0d111c",
     blue: "#0000ee",
     turqoise: "#00c9a7",
-    violet: "#7309ff",
-    pink: "#e1bbff",
+    violet: "#4c82fb",
+    pink: "#fd82ff",
     red: "000",
     grayLight: "#645d6e30",
   },
   fonts: {
     heading: `Rubik, ${base.fonts?.heading}`,
-    body: `Nunito, ${base.fonts?.body}`,
+    body: `Rubik, ${base.fonts?.body}`,
   },
 });
 
